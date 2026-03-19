@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Zen Hue Studio</title>
+  <meta name="robots" content="noindex">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --ink:    #2E2A27;
+      --stone:  #6B6259;
+      --sand:   #C8BFB5;
+      --paper:  #F5F2EE;
+      --warm:   #EDE8E2;
+      --terra:  #B5694A;
+      --serif:  'Cormorant Garamond', Georgia, serif;
+      --sans:   'Montserrat', sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 14px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── Nav ── */
+    nav {
+      border-bottom: 1px solid var(--warm);
+      padding: 0 48px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-wordmark {
+      font-family: var(--serif);
+      font-size: 12px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--stone);
+      text-decoration: none;
+    }
+
+    .nav-wordmark:hover { color: var(--ink); }
+
+    .nav-back {
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--sand);
+      transition: color 0.2s;
+    }
+
+    .nav-back:hover { color: var(--stone); }
+
+    /* ── Page header ── */
+    .page-header {
+      border-bottom: 1px solid var(--warm);
+      padding: 56px 24px 44px;
+      text-align: center;
+    }
+
+    .page-label {
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--terra);
+      margin-bottom: 14px;
+    }
+
+    .page-header h1 {
+      font-family: var(--serif);
+      font-size: clamp(28px, 4vw, 44px);
+      font-weight: 300;
+      color: var(--ink);
+      margin-bottom: 12px;
+    }
+
+    .page-header .meta {
+      font-size: 12px;
+      font-weight: 300;
+      color: var(--sand);
+      letter-spacing: 0.06em;
+    }
+
+    /* ── Document ── */
+    .doc {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 64px 24px 96px;
+    }
+
+    .doc section {
+      margin-bottom: 48px;
+    }
+
+    .doc h2 {
+      font-family: var(--serif);
+      font-size: 20px;
+      font-weight: 400;
+      color: var(--ink);
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--warm);
+    }
+
+    .doc p {
+      font-size: 13px;
+      font-weight: 300;
+      color: var(--ink);
+      line-height: 1.9;
+      margin-bottom: 12px;
+    }
+
+    .doc p:last-child { margin-bottom: 0; }
+
+    .doc ul {
+      margin: 10px 0 12px 18px;
+    }
+
+    .doc ul li {
+      font-size: 13px;
+      font-weight: 300;
+      color: var(--ink);
+      line-height: 1.9;
+      margin-bottom: 4px;
+    }
+
+    .doc a {
+      color: var(--terra);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(181, 105, 74, 0.3);
+      transition: border-color 0.2s;
+    }
+
+    .doc a:hover { border-color: var(--terra); }
+
+    .callout {
+      background: white;
+      border-left: 3px solid var(--terra);
+      border-radius: 4px;
+      padding: 16px 20px;
+      margin: 18px 0;
+    }
+
+    .callout p {
+      font-size: 13px;
+      margin: 0;
+    }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--warm);
+      padding: 24px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .footer-name {
+      font-family: var(--serif);
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--sand);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+    }
+
+    .footer-links a {
+      font-size: 10px;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--sand);
+      border: none;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: var(--stone); }
+
+    @media (max-width: 560px) {
+      nav { padding: 0 20px; }
+      footer { flex-direction: column; text-align: center; padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/" class="nav-wordmark">Zen Hue Studio</a>
+    <a href="/" class="nav-back">← Back</a>
+  </nav>
+
+  <header class="page-header">
+    <p class="page-label">Legal</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Zen Hue Studio &nbsp;·&nbsp; Last updated: March 2026</p>
+  </header>
+
+  <div class="doc">
+
+    <section>
+      <h2>About This Policy</h2>
+      <p>
+        This privacy policy applies to Zen Hue Studio and the tools associated with it, including the Zen Hue Lister application ("the App"). Zen Hue Studio is operated by Kelly Hartley, based in Melbourne, Australia.
+      </p>
+      <p>
+        This policy explains what data the App accesses, how it is used, and how it is protected. It specifically covers the App's use of the Pinterest API and the Etsy API.
+      </p>
+    </section>
+
+    <section>
+      <h2>Pinterest API Data</h2>
+      <p>
+        The App connects to the Pinterest API to create and publish pins promoting Zen Hue Studio's digital art products.
+      </p>
+      <p>The following Pinterest data is accessed:</p>
+      <ul>
+        <li>Your Pinterest account profile (to verify the connection)</li>
+        <li>Your Pinterest board list (so you can select which board to post to)</li>
+        <li>The ability to create pins on your behalf (title, description, image, and link)</li>
+      </ul>
+
+      <div class="callout">
+        <p>
+          Pinterest data is used solely to create pins linking to Etsy product listings. It is not stored on any external server, not shared with any third party, and not used for any purpose beyond posting your approved pin content.
+        </p>
+      </div>
+
+      <p>
+        The App does not read, store, or process your Pinterest followers, engagement metrics, messages, or any data beyond what is listed above.
+      </p>
+      <p>
+        Your Pinterest access token is stored locally on your own device and is never transmitted to or stored on any server operated by Zen Hue Studio.
+      </p>
+    </section>
+
+    <section>
+      <h2>Etsy API Data</h2>
+      <p>
+        The App connects to the Etsy API to create draft product listings in your Etsy shop.
+      </p>
+      <p>The following Etsy data is accessed:</p>
+      <ul>
+        <li>Your Etsy shop details (to verify the connection and retrieve your shop ID)</li>
+        <li>The ability to create draft listings on your behalf (title, description, tags, price, and digital files)</li>
+        <li>The ability to upload digital files to listings you have created</li>
+      </ul>
+      <p>
+        Etsy data is used solely to create product listings for your own shop. It is not shared with any third party, and no Etsy customer data is ever accessed or stored.
+      </p>
+    </section>
+
+    <section>
+      <h2>Image and Content Data</h2>
+      <p>
+        When you upload an image to the App, that image is sent to Anthropic's Claude AI service for analysis. Claude examines the image and generates a suggested product title, description, and tags based on the visual content.
+      </p>
+      <p>
+        Images are transmitted to Anthropic using your own Anthropic API key. Please refer to <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">Anthropic's Privacy Policy</a> for details on how they handle image data submitted via their API.
+      </p>
+      <p>
+        Zen Hue Studio does not retain copies of uploaded images beyond the current session.
+      </p>
+    </section>
+
+    <section>
+      <h2>Data Storage</h2>
+      <p>
+        The App stores the following data locally in your browser:
+      </p>
+      <ul>
+        <li>Your API keys (Anthropic, Etsy, Pinterest) — stored in browser local storage on your device only</li>
+        <li>Your Pinterest board selection preference</li>
+        <li>Your Etsy shop ID</li>
+      </ul>
+      <p>
+        None of this information is transmitted to, stored on, or accessible by any server operated by Zen Hue Studio. It remains on your device only.
+      </p>
+    </section>
+
+    <section>
+      <h2>Third-Party Services</h2>
+      <p>The App integrates with the following third-party services, each with their own privacy policy:</p>
+      <ul>
+        <li><a href="https://policy.pinterest.com/en/privacy-policy" target="_blank" rel="noopener">Pinterest Privacy Policy</a></li>
+        <li><a href="https://www.etsy.com/au/legal/privacy/" target="_blank" rel="noopener">Etsy Privacy Policy</a></li>
+        <li><a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">Anthropic (Claude AI) Privacy Policy</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Cookies and Tracking</h2>
+      <p>
+        This website does not use tracking cookies, advertising pixels, or analytics tools that collect personal information about visitors.
+      </p>
+    </section>
+
+    <section>
+      <h2>Your Rights</h2>
+      <p>
+        Because all data processed by the App is held locally on your own device, you have full control over it at all times. You can clear your stored settings at any time by clearing your browser's local storage, or through the App's settings screen.
+      </p>
+      <p>
+        Under Australian Privacy law, you have the right to access and correct personal information held about you. As no personal data is stored by Zen Hue Studio, there is nothing to access or correct — but if you have any questions, please get in touch.
+      </p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>
+        Zen Hue Studio is operated by Kelly Hartley.<br>
+        Email: <a href="mailto:kelly@wisewomenuseai.com">kelly@wisewomenuseai.com</a><br>
+        Melbourne, Victoria, Australia
+      </p>
+    </section>
+
+  </div>
+
+  <footer>
+    <span class="footer-name">Zen Hue Studio</span>
+    <ul class="footer-links">
+      <li><a href="https://www.etsy.com/au/shop/ZenHueStudio" target="_blank" rel="noopener">Etsy Shop</a></li>
+      <li><a href="/privacy">Privacy Policy</a></li>
+    </ul>
+  </footer>
+
+</body>
+</html>

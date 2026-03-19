@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zen Hue Studio — Japandi Digital Art Prints</title>
+  <meta name="description" content="Minimalist Japandi-inspired digital art prints. Download, print, and live with intention.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --ink:    #2E2A27;
+      --stone:  #6B6259;
+      --sand:   #C8BFB5;
+      --paper:  #F5F2EE;
+      --warm:   #EDE8E2;
+      --terra:  #B5694A;
+      --serif:  'Cormorant Garamond', Georgia, serif;
+      --sans:   'Montserrat', sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 14px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* ── Layout ── */
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 24px;
+      text-align: center;
+    }
+
+    /* ── Wordmark ── */
+    .wordmark {
+      font-family: var(--serif);
+      font-size: clamp(11px, 2vw, 13px);
+      font-weight: 400;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      color: var(--stone);
+      margin-bottom: 48px;
+    }
+
+    /* ── Divider line ── */
+    .rule {
+      width: 40px;
+      height: 1px;
+      background: var(--sand);
+      margin: 0 auto 48px;
+    }
+
+    /* ── Headline ── */
+    h1 {
+      font-family: var(--serif);
+      font-size: clamp(38px, 6vw, 64px);
+      font-weight: 300;
+      line-height: 1.15;
+      color: var(--ink);
+      margin-bottom: 24px;
+      max-width: 640px;
+    }
+
+    h1 em {
+      font-style: italic;
+      color: var(--terra);
+    }
+
+    /* ── Subtext ── */
+    p.sub {
+      font-size: 13px;
+      font-weight: 300;
+      color: var(--stone);
+      max-width: 400px;
+      margin: 0 auto 52px;
+      line-height: 1.9;
+      letter-spacing: 0.02em;
+    }
+
+    /* ── CTA button ── */
+    .btn {
+      display: inline-block;
+      font-family: var(--sans);
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--terra);
+      border: 1px solid var(--terra);
+      padding: 14px 36px;
+      transition: background 0.25s, color 0.25s;
+    }
+
+    .btn:hover {
+      background: var(--terra);
+      color: var(--paper);
+    }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--warm);
+      padding: 24px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .footer-name {
+      font-family: var(--serif);
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--sand);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+    }
+
+    .footer-links a {
+      font-size: 10px;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--sand);
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: var(--stone); }
+
+    @media (max-width: 560px) {
+      footer { flex-direction: column; text-align: center; padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <p class="wordmark">Zen Hue Studio</p>
+    <div class="rule"></div>
+
+    <h1>Art for the<br>quietly <em>intentional</em> home</h1>
+
+    <p class="sub">
+      Minimalist digital art prints in the Japandi tradition.<br>
+      Download, print, and live with what matters.
+    </p>
+
+    <a href="https://www.etsy.com/au/shop/ZenHueStudio" class="btn" target="_blank" rel="noopener">
+      Shop the collection
+    </a>
+  </main>
+
+  <footer>
+    <span class="footer-name">Zen Hue Studio</span>
+    <ul class="footer-links">
+      <li><a href="https://www.etsy.com/au/shop/ZenHueStudio" target="_blank" rel="noopener">Etsy Shop</a></li>
+      <li><a href="/privacy">Privacy Policy</a></li>
+    </ul>
+  </footer>
+
+</body>
+</html>
